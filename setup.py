@@ -61,6 +61,7 @@ setup(
     # Exclude all but the code folders
     packages=find_packages(exclude=('tests', 'docs', 'examples', 'versions')),
     install_requires=read_requirements('base.txt'),
+    python_requires='>=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*',
     include_package_data=True,
     extras_require={
         'dev': read_requirements('dev.txt')
@@ -76,6 +77,7 @@ setup(
         'Operating System :: OS Independent',
         'Programming Language :: Python',
         'Programming Language :: Python :: 2.7',
+        'Programming Language :: Python :: 3.6',
         'Topic :: Internet',
         'Topic :: Software Development :: Build Tools',
         'Topic :: Utilities'
